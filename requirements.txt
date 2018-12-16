@@ -1,0 +1,6 @@
+Django
+python-dotenv
+bandit
+safety
+pytest
+prospector

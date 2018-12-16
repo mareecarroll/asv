@@ -1,0 +1,176 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Astronomical Society of Victoria</title>
+        <meta 
+            name="viewport" 
+            content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link 
+            rel="stylesheet" 
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+            crossorigin="anonymous">
+        <link 
+            rel="stylesheet"
+            href="{% static 'css/bootswatch.solar.bootstrap4.min.css' %}">
+        <link 
+            rel="stylesheet"
+            href="{% static 'css/style.css' %}">
+        <script 
+            src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+            crossorigin="anonymous"></script>
+        <script 
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
+            crossorigin="anonymous"></script>
+        <script 
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
+            crossorigin="anonymous"></script>
+    </head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">ASV</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Sections</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Join</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/events/">Events</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="jumbotron pt-2 pb-2 mb-0 text-center">
+            <h1><img class='logo mr-3' src="{% static 'img/logo.png' %}"><span class='title pl-3 pr-3 rounded' style="background-color: rgba(0,0,0,0.3);">Astronomical Society of Victoria</span></h1>
+        </div>
+        <figcaption class="figure-caption text-right text-muted">Image: Rho Ophiuchi by James McHugh, Phil Hart, Ross Hortin, Mark Justice, Gavan Salter and Craig Davison</figcaption>
+
+        <div class="card mb-2">
+            <div class="card-body">
+                <p>The Society is based in Melbourne, Australia and includes city 
+                    and country members, as well some in other states and overseas. 
+                    It attracts people with a wide range of astronomical interests, 
+                    ages, abilities and experience. Originally founded in 1922, 
+                    it is the largest such organisation in the southern hemisphere.</p>
+                <p>Membership is open to all with an interest in astronomy.</p>
+                <p class="lead">
+                    <a class="btn btn-info btn-lg" href="#" role="button">Join now</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="card col-sm-4">
+                <img class="card-img-top" src="{% static 'img/card-img-top/gallery.jpg' %}" alt="Card image cap">
+                <div class="card-body">
+                        <h5 class="card-title">Gallery</h5>
+                        <p class="card-text">View astronomical images taken by members of the ASV -- everything from the moon and planets to nebula and far away galaxies.</p>
+                        <a href="#" class="btn btn-info">See gallery</a>
+                </div>
+                <div class="card-footer text-muted">Image: Dark nebula in Musca by Bratislav Curcic</div>
+            </div>
+            <div class="card col-sm-4">
+                <img class="card-img-top" src="{% static 'img/card-img-top/astrop.jpg' %}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Astrophotography</h5>
+                    <p class="card-text">Our Astrophotography section meets regularly at ASV lodge and has monthly field trips to our dark sky site. The section is very active and new members are always welcome.</p>
+                    <a href="#" class="btn btn-info">Read more</a>
+                </div>
+                <div class="card-footer text-muted">Image: M16 by Steven Mohr</div>
+            </div>
+            <div class="card col-sm-4">
+                <img class="card-img-top" src="{% static 'img/card-img-top/for.the.people.jpg' %}" alt="Card image cap">
+                <div class="card-body">
+                        <h5 class="card-title">Astronomy for the people</h5>
+                        <p class="card-text">Astronomy for the People is an ASV service providing telescopes for schools and public demonstrations.</p>
+                        <a href="#" class="btn btn-info">Read more</a>
+                </div>
+                <div class="card-footer text-muted">Image: David Rolfe</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="card col-sm-4">
+                <div class="card-body">
+                    <h5 class="card-title">Monthly meeting</h5>
+                    <p class="card-text">
+                        <p>Wed 12 Dec 8 pm</p>
+                        <p>Q & A Panel and Annual Social Night</p>
+                    <a href="#" class="btn btn-info">Read more</a>
+                </div>
+            </div>
+            <div class="card col-sm-4">
+                <div class="card-body">
+                    <h5 class="card-title">In the news</h5>
+                    <p class="card-text">The Great Melbourne Telescope Restoration on Ch 9 News</p>
+                    <a href="#" class="btn btn-info">Read more</a>
+                </div>
+            </div>
+            <div class="card col-sm-4">
+                <div class="card-body">
+                    <h5 class="card-title">Crux Magazine</h5>
+                    <p class="card-text">The Dec-Jan Crux is now available download for members</p>
+                    <a href="#" class="btn btn-info">Download</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row mb-2">
+            <div class="card col-sm-4">
+                <div class="card-body">
+                    <h5 class="card-title">Forum</h5>
+                    <p class="card-text">With sections for general chat, new astronomers, items for sale and radio astronomy, the forum is the place for discussion</p>
+                    <a href="#" class="btn btn-info">Go to forum</a>
+                </div>
+                
+            </div>
+            <div class="card col-sm-4">
+                
+                <div class="card-body">
+                    <h5 class="card-title">Great Melbourne Telescope Restoration Project</h5>
+                    <p class="card-text">Once the largest steerable telescope in the world, the project to return it to the Melbourne Observatory</p>
+                    <a href="#" class="btn btn-info">Read more</a>
+            
+                </div>
+            </div>
+            <div class="card col-sm-4">
+                <div class="card-body">
+                    <h5 class="card-title">Events</h5>
+                    <p class="card-text">The ASV runs a large number of events to cater for a broad range of astronomy related interests</p>
+                    <a href="/events/" class="btn btn-info">See events</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,141 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Astronomical Society of Victoria - Events</title>
+        <meta 
+            name="viewport" 
+            content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link 
+            rel="stylesheet" 
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+            crossorigin="anonymous">
+        <link 
+            rel="stylesheet"
+            href="{% static 'css/bootswatch.solar.bootstrap4.min.css' %}">
+        <link 
+            rel="stylesheet"
+            href="{% static 'css/style.css' %}">
+        <script 
+            src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+            crossorigin="anonymous"></script>
+        <script 
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
+            crossorigin="anonymous"></script>
+        <script 
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
+            crossorigin="anonymous"></script>
+        <link 
+            rel="stylesheet" 
+            href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" 
+            integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" 
+            crossorigin="anonymous">
+    </head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">ASV</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Sections</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Join</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/events/">Events</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="jumbotron pt-2 pb-2 mb-0 text-center">
+            <h1><img class='logo mr-3' src="{% static 'img/logo.png' %}"><span class='title pl-3 pr-3 rounded' style="background-color: rgba(0,0,0,0.3);">Astronomical Society of Victoria</span></h1>
+        </div>
+        <figcaption class="figure-caption text-right text-muted">Image: Rho Ophiuchi by James McHugh, Phil Hart, Ross Hortin, Mark Justice, Gavan Salter and Craig Davison</figcaption>
+
+        <div class="card mb-2">
+            <div class="card-body">
+                <h3 class="card-title">Events</h3>
+                <hr/>
+                <p>The ASV runs a large number of events to cater for 
+                    a broad range of astronomy related interests. Check 
+                    the website on a regular basis for the latest updates. 
+                    The next 10 events are listed below.</p>
+                <p class="lead">
+                    <a class="btn btn-info" href="#" role="button">Full listing</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="card col-sm-6">
+                <div class="card-body">
+                    <h4 class="card-title">Mon 17 December</h4>
+                    <h5 class="card-subtitle mb-2 text-muted">8pm - 11pm</h5>
+                        <hr/>
+                    <p class="card-text">
+                        <h5>Radio Astronomy section meeting</h5>
+                        <span class="pr-2"><i class="fas fa-map-marker-alt pr-2"></i>ASV Lodge</span>
+                        <span class="pr-2"><i class="fas fa-user pr-2"></i>Clint Jeffrey</span>
+                    </p>
+                    <a href="#" class="card-link">Add to calendar</a>
+                    <a href="#" class="card-link badge badge-info">Radio Astronomy</a>
+                </div>
+            </div>
+            <div class="card col-sm-6">
+                    <div class="card-body">
+                        <h4 class="card-title">Tue 18 December</h4>
+                        <h5 class="card-subtitle mb-2 text-muted">7.30pm - 10.00pm</h5>
+                            <hr/>
+                        <p class="card-text">
+                            <h5>Dr John O'Connor (U3A) speaking on the topic "Our Cosmic Significance - Alone in the Milky Way"</h5>
+                            <p>Followed by Xmas feast in the Clubroom</p>
+                            <span class="pr-2"><i class="fas fa-map-marker-alt pr-2"></i>ASV Lodge</span>
+                            <span class="pr-2"><i class="fas fa-user pr-2"></i>Patricia Larkin</span>
+                        </p>
+                        <a href="#" class="card-link">Add to calendar</a>
+                        <a href="#" class="card-link badge badge-info">The Diurnals</a>
+                    </div>
+                </div>
+            <div class="card col-sm-6">
+                <div class="card-body">
+                    <h4 class="card-title">Wed 19 December</h4>
+                    <h5 class="card-subtitle mb-2 text-muted">8pm - 11pm</h5>
+                        <hr/>
+                    <p class="card-text">
+                        <h5>How to read charts</h5>
+                        <p>Traditionally this was "How to use your Star Atlas", but it has grown to become "How to use your Planisphere, Starry Night, Stellarium, free charts you can print yourself". We will also cover apps for your tablet, phablet and phone. Then there are yearbooks or your favourite column from an Astronomy magazine, like Binocular highlights.</p>
+                        <span class="pr-2"><i class="fas fa-map-marker-alt pr-2"></i>ASV Lodge</span>
+                        <span class="pr-2"><i class="fas fa-user pr-2"></i>Ken Le Marquand</span>
+                    </p>
+                    <a href="#" class="card-link">Add to calendar</a>
+                    <a href="#" class="card-link badge badge-info">New Astronmers' Group</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
