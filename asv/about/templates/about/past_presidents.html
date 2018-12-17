@@ -1,0 +1,29 @@
+<table class="table">
+    <caption>Past Presidents</caption>
+    <thead>
+        <tr>
+            <th>Year</th>
+            <th>President</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for president in past_presidents %}
+        <tr>
+            <td>
+                {% if president.start_year equalto president.end_year %}
+                    {{ president.start_year }}
+                {% else %}
+                    {{ president.start_year}}-{{ president.end_year }}
+                {% endif %}
+            </td>
+            <td>
+                {{ president.name }}{% if president.deceased %}*{% endif %}
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+    <tfoot>
+        <p>* Deceased</p>
+        <p>Note: the dates above indicdate the calendar year in which the presidents where elected.</p>
+    </tfoot>
+</table>

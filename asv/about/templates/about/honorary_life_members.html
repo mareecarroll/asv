@@ -1,0 +1,20 @@
+<table class="table">
+    <caption>Honorary Life Members</caption>
+        <thead>
+            <tr>
+                <th>Year</th>
+                <th>President</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for member in life_members %}
+                <td>
+                    {{ member.name }}{% if member.deceased %}*{% endif %}
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+        <tfoot>
+            <p>* Deceased</p>
+        </tfoot>
+    </table>
